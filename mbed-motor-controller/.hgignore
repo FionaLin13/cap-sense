@@ -1,0 +1,5 @@
+^BUILD$
+^.mbed$
+^mbed-os$
+^I2C_Driver$
+^nRF51822$
