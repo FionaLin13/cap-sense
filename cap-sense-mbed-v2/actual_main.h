@@ -1,4 +1,4 @@
-3#include <cmath>
+#include <cmath>
 #include <cstdint>
 #include <mbed.h>
 #include "stepper.h"
@@ -100,7 +100,7 @@ int main(void) {
                 case '2':
                     curState = State::DOWN;
                     break;
-                case '3':
+                case 's':
                     printf("Starting DISCRETE experiment\n");
                     curState = State::DISCRETE;
                     discrete_exp.reset();
@@ -111,7 +111,7 @@ int main(void) {
 //                    continuous_exp.reset();
 //                    continuous_exp.start();
                     break;
-                case '0':
+                case 'e':
                     printf("Stopping\n");
                     if (curState == DISCRETE) { 
                         auto& data = discrete_exp.report();
