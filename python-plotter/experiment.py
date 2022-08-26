@@ -49,8 +49,8 @@ class NucleoMotor:
 
 
 def main():
-    arduino = ArduinoSensor('/dev/cu.usbmodem143201', 115200)
-    # motor = NucleoMotor('COM5', 9600)
+    arduino = ArduinoSensor('/dev/cu.usbmodem141201', 115200)
+    motor = NucleoMotor('/dev/cu.usbmodel141303', 9600)
 
     data = []
 
